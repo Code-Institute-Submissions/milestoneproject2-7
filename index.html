@@ -11,20 +11,26 @@
 </head>
 
 <body>
-<header>
-    <div class="header"><span class="logo">News Hub.</span>
+    <header>
+        <div class="header"><span class="logo">News Hub.</span>
+        </div>
+    </header>
+    <div>
+        search for news articles header
     </div>
-</header>
-<div>
-search for news articles header
-</div>
-<textarea id="searchbox"></textarea>
-<input type="button" value="Search!" onclick="doSearch()">	
-<div id="resultsdiv"></div>
+    <form>
+        <textarea id="searchbox"></textarea>
+        <input type="button" value="Search!" id="searchbutton">
+    </form>
+    
+
+    <div id="resultsdiv"></div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
