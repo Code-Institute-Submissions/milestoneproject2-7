@@ -45,13 +45,14 @@ $(document).ready(function () {
         var showdiv = document.getElementById("resultsdiv");
         // empty that div of its current contents
         showdiv.innerHTML = results;
+//        showdiv.innerHTML = JSON.stringify(results);
 
-        //I am trying to dsiplay the results in the html using the following code:
 
-        for (var i = 0; i < articles.length; i++) {
-            var obj = articles[i];
-        
-            return(obj.title);
+
+        for (var i = 0; i < results.articles.length; i++) {
+            var obj = results.articles[i];
+            showdiv.innerHTML += "<ul>"+"<li>"+"TITLE: "+ obj.title+"</li>"+"<li>"+" AUTHOR: "+obj.author+"</li>"+"<li>"+" URL: " + obj.url +"</li>"+"<li>"+" SOURCE: "+ obj.source.name+"</li>"+"<li>"+" DESCRIPTION: " + obj.description+"</li>"+"</ul>";   
+
         }
         
 
