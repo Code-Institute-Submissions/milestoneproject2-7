@@ -39,26 +39,41 @@ $(document).ready(function () {
 
     }
 
+    function generatePaginationButtons(next, prev) {
+        if (next && prev) {
+            return `<button onclick="writeToDocument('${prev}')">Previous</button>
+                    <button onclick="writeToDocument('${next}')">Next</button>`;
+        } else if (next && !prev) {
+            return `<button onclick="writeToDocument('${next}')">Next</button>`;
+        } else if (!next && prev) {
+            return `<button onclick="writeToDocument('${prev}')">Previous</button>`;
+        }
+    }
+
     function displayResults(results) {
         console.log(results);
         // get the div where the results will be shown
         var showdiv = document.getElementById("resultsdiv");
-        // empty that div of its current contents
         showdiv.innerHTML = results;
-//        showdiv.innerHTML = JSON.stringify(results);
-
-
 
         for (var i = 0; i < results.articles.length; i++) {
             var obj = results.articles[i];
-            showdiv.innerHTML += "<ul>"+"<li>"+"TITLE: "+ obj.title+"</li>"+"<li>"+" AUTHOR: "+obj.author+"</li>"+"<li>"+" URL: " + obj.url +"</li>"+"<li>"+" SOURCE: "+ obj.source.name+"</li>"+"<li>"+" DESCRIPTION: " + obj.description+"</li>"+"</ul>";   
-
+            var newslink = obj.url
+            
+            showdiv.innerHTML += "<ul>"+"<li>"+"TITLE: "+ obj.title+"</li>"+"<li>"+" AUTHOR: "+obj.author+"</li>"+"<li>"+"<a href="+newslink+" id="+"link"+" target="+"_blank"+">"+" URL: " + obj.url +"</a>"+"</li>"+"<li>"+" SOURCE: "+ obj.source.name+"</li>"+"<li>"+" DESCRIPTION: " + obj.description+"</li>"+"</ul>";   
         }
+        //adding pagination to display the results 
+        var numberOfResults = results.totalResults
         
-
+        if (numberOfResults>20) {
+            pagination = generatePaginationButtons(obj.next, obj.previous)
+        }
 
     }
 
+    // window.onload = function(){
+    //     document.getElementById("link").href = window.location.toString();
+    // }
 
 
 });
