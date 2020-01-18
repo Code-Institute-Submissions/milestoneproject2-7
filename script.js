@@ -28,8 +28,6 @@ $(document).ready(function () {
         $.ajax({
             url: url,
             type: 'GET',
-            //   data: { q: searchterm },
-            //   datatype: 'json',
             success: function (results) {
                 displayResults(results);
             },
@@ -43,26 +41,19 @@ $(document).ready(function () {
 
     function displayResults(results) {
         console.log(results);
-        // display the results of the query
         // get the div where the results will be shown
         var showdiv = document.getElementById("resultsdiv");
         // empty that div of its current contents
         showdiv.innerHTML = results;
 
-        for (i = 0; i < results.item[i].length; i++) {
+        //I am trying to dsiplay the results in the html using the following code:
 
-            console.log(article)
-
+        for (var i = 0; i < articles.length; i++) {
+            var obj = articles[i];
+        
+            return(obj.title);
         }
-
-        var article = results.item[i].title;
-
-        // article.forEach(function() {
-        //     var div = $("<div>" + articles.title + "<div>");
-        //     $(document.resultsdiv).append(div);
-        // });
-
-
+        
 
 
     }
