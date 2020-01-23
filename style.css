@@ -1,13 +1,189 @@
-body {
+.main-body {
     
-    background-color: #e6e7e8;
+    background-color: white;
+    width: 100%;
 }
 
 header {
     width: 100%;
-    height: 40px;
+    min-height: 20px;
     text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+header a {
+    color: black;
+    text-decoration: none;
+} 
+
+header a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.header-text {
+    padding: 2px;
     font-size: 40px;
-    font-family: 'Pacifico', cursive;
 }
  
+.howmanyresults {
+    text-align: center;
+}
+
+.images {
+    height: auto;
+    max-width: 450px;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: justify;
+}
+.category-bar {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.navbar-item {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+}
+
+.search-button {
+    background-color: white;
+    border-color: 1px solid black;
+    color: black;
+}
+.search-button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.search-articles-box {
+    border: 1px solid grey;
+}
+
+.nav-container {
+    text-align: center !important;
+    align-items: center !important; 
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+
+.nav-container-inner {
+    width: 100%;
+}
+
+
+.nav-buttons {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+
+.hide-this-button {
+    border: 0px solid black;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+.searcharea {
+    display: -webkit-inline-box;
+    
+}
+
+.show-date {
+    color: grey;
+}
+
+.country-dropdown {
+    font-size: 14px;
+    max-width: 70px;
+    display: inline;
+
+}
+
+.article-content {
+    max-width: 100vw;
+    display: inline-grid;
+    top: 0px;
+    position: relative;
+    height: auto;
+    padding: 1px;
+}
+
+.show-headlines {
+    display: inline-grid;
+    text-align: center !important;
+    max-width: 100vw !important;
+}
+
+.articles-container {
+    height: auto;
+    text-align: center !important;
+    max-width: 100vw !important;
+
+}
+.content-wrap {
+    padding-bottom: 4.5rem; 
+    text-align: center !important;   
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #cacaca;
+  color: #737171;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.footer p {
+    padding: 1px;
+}
+
+.footer a {
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  
+}
+
+.dropdown-text {
+    font-size: 12px;
+    max-width: 180px;
+}
+
+.searchbox-style {
+    font-size: 14px;
+    border-radius: 5px;
+    max-height: 30px
+}
+
+.dropdown-position {
+    text-align: -webkit-center;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
