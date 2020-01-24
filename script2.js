@@ -67,15 +67,6 @@ $(document).ready(function () {
 
     }
 
-    $("#guzik2").click(function () {
-        retrieve()
-    })
-
-    function retrieve() {
-        var stuff = localStorage.getItem("email");
-        console.log(stuff)
-
-    }
 
 
 })

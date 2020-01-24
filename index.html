@@ -5,16 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link
-        href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Pacifico|Anton|IM+Fell+Great+Primer+SC|Oswald&display=swap"
-        rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Pacifico|Anton|IM+Fell+Great+Primer+SC|Oswald&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/5b8d277a30.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -33,18 +27,10 @@
             </header>
             <div class="nav-container">
                 <div/div class="navbar navbar-expand-lg navbar-light bg-light ">
-                    <button id="searchbutton" class="navbar-toggler" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="searchbutton" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- <form id="searchbararticles" class="form-inline my-2 my-lg-0 searchbutton-collapse">
-                            <input id="searchbox" class="form-control mr-sm-2" type="search"
-                                placeholder="Search for articles" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0 search-button"
-                                >Search</button>
-                            </form> -->
                         <div class="category-bar">
                             <div class="container">
                                 <div class="row">
@@ -53,15 +39,13 @@
                                         <form>
                                             <ul id="navdatabuttons" class="navbar-nav mr-auto category-bar">
                                                 <li class="nav-item navbar-item">
-                                                    <input type="button" id="initialbutton" class="nav-link nav-buttons"
-                                                        value="general">
+                                                    <input type="button" id="initialbutton" class="nav-link nav-buttons" value="general">
                                                 </li>
                                                 <li class="nav-item navbar-item">
                                                     <input type="button" class="nav-link nav-buttons" value="business">
                                                 </li>
                                                 <li class="nav-item navbar-item">
-                                                    <input type="button" class="nav-link nav-buttons"
-                                                        value="entertainment">
+                                                    <input type="button" class="nav-link nav-buttons" value="entertainment">
                                                 </li>
                                                 <li class="nav-item navbar-item">
                                                     <input type="button" class="nav-link nav-buttons" value="health">
@@ -70,8 +54,7 @@
                                                     <input type="button" class="nav-link nav-buttons" value="science">
                                                 </li>
                                                 <li class="nav-item navbar-item">
-                                                    <input type="button" class="nav-link nav-buttons"
-                                                        value="technology">
+                                                    <input type="button" class="nav-link nav-buttons" value="technology">
                                                 </li>
                                             </ul>
                                         </form>
@@ -81,148 +64,113 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col columns">
-                        <div id="showtotalnumber" class="howmanyresults"></div>
-
-                        <br>
-                        <div id="resultsdiv"></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <br> -->
-
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-2 navbar-item ">
-                        <!-- <form id="searchbararticles" class="">
-                                <textarea id="searchbox" class="search-articles-box searchbox-style" type="text" placeholder="Search for articles"></textarea>
-                                <input id="searchbutton" type="button" value="Search!" class="search-button searchbox-style"></input>
-                        </form> -->
-                    </div>
-                    <div class="col-md-2 navbar-item dropdown-position">
-                        <div class="nav-item dropdown country-dropdown">
-                            <div class="form-group country-dropdown">
-                                <select class="form-control navbar-item dropdown-text" id="country">
-                                    <option class="dropdown-item" value="us">Filter content by country:</option>
-                                    <option class="dropdown-item" value="us">USA</option>
-                                    <option class="dropdown-item" value="ae">United Arab Emirates</option>
-                                    <option class="dropdown-item" value="ar">Argentina</option>
-                                    <option class="dropdown-item" value="at">Austria</option>
-                                    <option class="dropdown-item" value="au">Australia</option>
-                                    <option class="dropdown-item" value="be">Belgium</option>
-                                    <option class="dropdown-item" value="bg">Bulgaria</option>
-                                    <option class="dropdown-item" value="br">Brazil</option>
-                                    <option class="dropdown-item" value="ca">Canada</option>
-                                    <option class="dropdown-item" value="ch">Switzerland</option>
-                                    <option class="dropdown-item" value="cn">China</option>
-                                    <option class="dropdown-item" value="co">Colombia</option>
-                                    <option class="dropdown-item" value="cu">Cuba</option>
-                                    <option class="dropdown-item" value="cz">Chech Republic</option>
-                                    <option class="dropdown-item" value="de">Germany</option>
-                                    <option class="dropdown-item" value="eg">Egypt</option>
-                                    <option class="dropdown-item" value="fr">France</option>
-                                    <option class="dropdown-item" value="gb">UK</option>
-                                    <option class="dropdown-item" value="hk">Hong Kong</option>
-                                    <option class="dropdown-item" value="id">Indonesia</option>
-                                    <option class="dropdown-item" value="ie">Ireland</option>
-                                    <option class="dropdown-item" value="il">Israel</option>
-                                    <option class="dropdown-item" value="in">India</option>
-                                    <option class="dropdown-item" value="it">Italy</option>
-                                    <option class="dropdown-item" value="jp">Japan</option>
-                                    <option class="dropdown-item" value="kr">Croatia</option>
-                                    <option class="dropdown-item" value="lt">Lithuania</option>
-                                    <option class="dropdown-item" value="lv">Latvia</option>
-                                    <option class="dropdown-item" value="ma">Morocco</option>
-                                    <option class="dropdown-item" value="mx">Mexico</option>
-                                    <option class="dropdown-item" value="my">Malaysia</option>
-                                    <option class="dropdown-item" value="ng">Nigeria</option>
-                                    <option class="dropdown-item" value="nl">Netherlands</option>
-                                    <option class="dropdown-item" value="nz">New Zealand</option>
-                                    <option class="dropdown-item" value="ph">Philippines</option>
-                                    <option class="dropdown-item" value="pl">Poland</option>
-                                    <option class="dropdown-item" value="pt">Portugal</option>
-                                    <option class="dropdown-item" value="ro">Romania</option>
-                                    <option class="dropdown-item" value="rs">Serbia</option>
-                                    <option class="dropdown-item" value="ru">Russia</option>
-                                    <option class="dropdown-item" value="sa">Saudi Ariabia</option>
-                                    <option class="dropdown-item" value="se">Sweden</option>
-                                    <option class="dropdown-item" value="sg">Singapore</option>
-                                    <option class="dropdown-item" value="si">Slovenia</option>
-                                    <option class="dropdown-item" value="sk">Slovakia</option>
-                                    <option class="dropdown-item" value="th">Thailand</option>
-                                    <option class="dropdown-item" value="tr">Turkey</option>
-                                    <option class="dropdown-item" value="tw">Taiwan</option>
-                                    <option class="dropdown-item" value="ua">Ukraine</option>
-                                    <option class="dropdown-item" value="ve">Venezuela</option>
-                                    <option class="dropdown-item" value="za">South Africa</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            </div>
-            <br>
-            <!-- testing -->
-            <!-- <form>
-                <input id="searchbox">
-                <button id="searchbutton" type="button">search</button>
-            </form> -->
-
-            <form>
-                <input id="inputbox">
-                <a href="searchresults.html" target="_blank" ><button id="inputboxbbutton" type="button">search</button></a> 
-            </form>
-
-            <br>
-
-            
-
-            <!-- <form>
-                testing here
-                <input id="email">
-                <button id="guzik" type="button">StoreEmail</button>
-
-            </form> -->
-
-            <!-- testing -->
-
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-4">
-                        <div class="articles-container">
-                            <div class="show-headlines" id="showheadlines"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3"></div>
-                </div>
-            </div>
-
         </div>
 
-        <div class="footer">
-            <p>This project has been developed for Educational purposes. Powered by <a
-                    href="newsapi.org">NewsAPI.org</a></p>
-            <p>Created by Sebastian Dzieniak
-                <a href="https://www.linkedin.com/in/sebastian-dzieniak/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/sebson1990"><i class="fab fa-github"></i></a>
-            </p>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-2 navbar-item ">
+                </div>
+                <div class="col-md-2 navbar-item dropdown-position">
+                    <div class="nav-item dropdown country-dropdown">
+                        <div class="form-group country-dropdown">
+                            <select class="form-control navbar-item dropdown-text" id="country">
+                                <option class="dropdown-item" value="us">Filter content by country:</option>
+                                <option class="dropdown-item" value="us">USA</option>
+                                <option class="dropdown-item" value="ae">United Arab Emirates</option>
+                                <option class="dropdown-item" value="ar">Argentina</option>
+                                <option class="dropdown-item" value="at">Austria</option>
+                                <option class="dropdown-item" value="au">Australia</option>
+                                <option class="dropdown-item" value="be">Belgium</option>
+                                <option class="dropdown-item" value="bg">Bulgaria</option>
+                                <option class="dropdown-item" value="br">Brazil</option>
+                                <option class="dropdown-item" value="ca">Canada</option>
+                                <option class="dropdown-item" value="ch">Switzerland</option>
+                                <option class="dropdown-item" value="cn">China</option>
+                                <option class="dropdown-item" value="co">Colombia</option>
+                                <option class="dropdown-item" value="cu">Cuba</option>
+                                <option class="dropdown-item" value="cz">Chech Republic</option>
+                                <option class="dropdown-item" value="de">Germany</option>
+                                <option class="dropdown-item" value="eg">Egypt</option>
+                                <option class="dropdown-item" value="fr">France</option>
+                                <option class="dropdown-item" value="gb">UK</option>
+                                <option class="dropdown-item" value="hk">Hong Kong</option>
+                                <option class="dropdown-item" value="id">Indonesia</option>
+                                <option class="dropdown-item" value="ie">Ireland</option>
+                                <option class="dropdown-item" value="il">Israel</option>
+                                <option class="dropdown-item" value="in">India</option>
+                                <option class="dropdown-item" value="it">Italy</option>
+                                <option class="dropdown-item" value="jp">Japan</option>
+                                <option class="dropdown-item" value="kr">Croatia</option>
+                                <option class="dropdown-item" value="lt">Lithuania</option>
+                                <option class="dropdown-item" value="lv">Latvia</option>
+                                <option class="dropdown-item" value="ma">Morocco</option>
+                                <option class="dropdown-item" value="mx">Mexico</option>
+                                <option class="dropdown-item" value="my">Malaysia</option>
+                                <option class="dropdown-item" value="ng">Nigeria</option>
+                                <option class="dropdown-item" value="nl">Netherlands</option>
+                                <option class="dropdown-item" value="nz">New Zealand</option>
+                                <option class="dropdown-item" value="ph">Philippines</option>
+                                <option class="dropdown-item" value="pl">Poland</option>
+                                <option class="dropdown-item" value="pt">Portugal</option>
+                                <option class="dropdown-item" value="ro">Romania</option>
+                                <option class="dropdown-item" value="rs">Serbia</option>
+                                <option class="dropdown-item" value="ru">Russia</option>
+                                <option class="dropdown-item" value="sa">Saudi Ariabia</option>
+                                <option class="dropdown-item" value="se">Sweden</option>
+                                <option class="dropdown-item" value="sg">Singapore</option>
+                                <option class="dropdown-item" value="si">Slovenia</option>
+                                <option class="dropdown-item" value="sk">Slovakia</option>
+                                <option class="dropdown-item" value="th">Thailand</option>
+                                <option class="dropdown-item" value="tr">Turkey</option>
+                                <option class="dropdown-item" value="tw">Taiwan</option>
+                                <option class="dropdown-item" value="ua">Ukraine</option>
+                                <option class="dropdown-item" value="ve">Venezuela</option>
+                                <option class="dropdown-item" value="za">South Africa</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
+        <br>
+
+        <form class="search-form" >
+            <input class="searchbox-style" id="inputbox">
+            <a href="searchresults.html">
+                <button id="inputboxbbutton" class="search-button" type="button">search</button>
+            </a>
+        </form>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-4">
+                    <div class="articles-container">
+                        <div class="show-headlines" id="showheadlines"></div>
+                        <div id="pagination" class="pagination"></div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>This project has been developed for Educational purposes. Powered by <a href="https://newsapi.org/">NewsAPI.org</a></p>
+        <p>Created by Sebastian Dzieniak
+            <a href="https://www.linkedin.com/in/sebastian-dzieniak/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sebson1990"><i class="fab fa-github"></i></a>
+        </p>
+    </div>
     </div>
     <script src="script.js"></script>
-
 </body>
-
 </html>

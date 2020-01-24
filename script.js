@@ -18,18 +18,18 @@ $(document).ready(function () {
         var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         var yyyy = today.getFullYear();
         var weekday = new Array(7);
-        weekday[0] = "Sunday"; 
-        weekday[1] = "Monday"; 
-        weekday[2] = "Tuesday"; 
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
         weekday[3] = "Wednesday";
         weekday[4] = "Thursday";
         weekday[5] = "Friday";
-        weekday[6] = "Saturday"; 
+        weekday[6] = "Saturday";
         var wd = weekday[today.getDay()];
 
-        today = wd +" "+ mm + '/' + dd + '/' + yyyy;
+        today = wd + " " + mm + '/' + dd + '/' + yyyy;
         var showDate = document.getElementById("showdate")
-        showDate.innerHTML =  today
+        showDate.innerHTML = today
     }
 
     //////////////this is the seciton with funcitons responsible for getting the headlines on the front page///////////////////
@@ -58,7 +58,7 @@ $(document).ready(function () {
     //Getting the articles form the API
     function getHeadlines() {
 
-        
+
         //filtering content by country
 
         var countrySelect = document.getElementById("country").value;
@@ -67,7 +67,7 @@ $(document).ready(function () {
         var countryList = document.getElementById("country"); // get the searchbox
         var countrySearch = countryList.value; // get the search term
 
-        
+
 
         //getting the category value
 
@@ -105,21 +105,21 @@ $(document).ready(function () {
         // })
 
         // function clearContent(){}
-            var el = document.getElementById("showheadlines");
-            el.innerHTML = "";    
-        
+        var el = document.getElementById("showheadlines");
+        el.innerHTML = "";
+
 
 
         var showHeadlines = document.getElementById("showheadlines")
         for (var i = 0; i < resultsNews.articles.length; i++) {
             var obj = resultsNews.articles[i];
             var newslink = obj.url
-            showHeadlines.innerHTML += "<div class='article-content'>"+"<ul>" + "<li>" + "<img src=" + obj.urlToImage + " alt='image'" + " class='images'> " +
+            showHeadlines.innerHTML += "<div class='article-content'>" + "<ul>" + "<li>" + "<img src=" + obj.urlToImage + " alt='image'" + " class='images'> " +
                 "<a href=" + newslink + " target=" + "_blank" + ">" + obj.title + "</a>" + "</li>"
                 + "<li>" + " Author: " + obj.author + "</li>" +
                 "<li>" + " Source: " + obj.source.name + "</li>" +
                 "<li>" + obj.description + "</li>" +
-                "<li>" + "<a href=" + newslink + " target=" + "_blank" + ">" + "Go to article" + "</a>" + "</li>" + "</ul>"+"</div>";
+                "<li>" + "<a href=" + newslink + " target=" + "_blank" + ">" + "Go to article" + "</a>" + "</li>" + "</ul>" + "</div>";
         }
     }
 
@@ -153,32 +153,31 @@ $(document).ready(function () {
 
     ////////////////////this is the section with functions responsible for the search funcitonality/////////////////////
 
-    
+
     // //trigger the search after pressing enter
 
-    // document.getElementById('searchbox').addEventListener("keydown", function (e) {
-    //     if (e.keyCode == 13) {
-    //         doSearch()
-    //     }
-    // });
-
+    document.getElementById("inputbox").addEventListener("keydown", function (e) {
+        if (e.keyCode == 13) {
+            window.location.href = "searchresults.html"
+        }
+    });
 
     // passing the search value to another page
 
     $("#inputboxbbutton").click(function () {
         getValue()
     });
-    
+
     function getValue() {
         var searchValue = document.getElementById("inputbox");
         localStorage.setItem("inputbox", searchValue.value)
         console.log(searchValue.value)
     }
- 
 
-    /////////////////The one search function - getting the data
 
-    
+
+
+
 
 
 });

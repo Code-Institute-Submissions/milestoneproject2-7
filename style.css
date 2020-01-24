@@ -1,8 +1,3 @@
-.main-body {
-    
-    background-color: white;
-    width: 100%;
-}
 
 header {
     width: 100%;
@@ -28,7 +23,7 @@ header a:hover {
 }
  
 .howmanyresults {
-    text-align: center;
+    text-align: end;
 }
 
 .images {
@@ -64,21 +59,11 @@ li {
     border-color: black;
     color: white;
 }
-
-.search-articles-box {
-    border: 1px solid grey;
-}
-
 .nav-container {
     text-align: center !important;
     align-items: center !important; 
     border-bottom: 1px solid black;
     border-top: 1px solid black;
-}
-
-
-.nav-container-inner {
-    width: 100%;
 }
 
 
@@ -88,15 +73,6 @@ li {
 }
 
 
-.hide-this-button {
-    border: 0px solid black;
-    background-color: transparent;
-    -webkit-appearance: none;
-}
-.searcharea {
-    display: -webkit-inline-box;
-    
-}
 
 .show-date {
     color: grey;
@@ -186,4 +162,14 @@ li {
     height: 1px;
     width: 100%;
     background-color: black;
+}
+
+.search-form {
+    text-align: center !important;
+}
+
+@media screen and (max-width: 500px) {
+    .images {
+        width: 300px;
+    }
 }
